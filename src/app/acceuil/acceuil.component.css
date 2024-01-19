@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    position: relative;
+    animation: blueRainbowBg 15s linear;
+	animation-iteration-count: infinite;
+    width: 100%;
+}
+
+
+.bienvenue{
+    font-size: 38px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+
+
+@keyframes blueRainbowBg {
+    0%, 100% {
+        background-color: rgb(0, 0, 255); /* Blue */
+      }
+      8% {
+        background-color: rgb(32, 0, 255);
+      }
+      16% {
+        background-color: rgb(64, 0, 255);
+      }
+      25% {
+        background-color: rgb(96, 0, 255);
+      }
+      33% {
+        background-color: rgb(128, 0, 255);
+      }
+      41% {
+        background-color: rgb(160, 0, 255);
+      }
+      50% {
+        background-color: rgb(192, 0, 255);
+      }
+      58% {
+        background-color: rgb(224, 0, 255);
+      }
+      66% {
+        background-color: rgb(255, 0, 255); /* Purple */
+      }
+      75% {
+        background-color: rgb(224, 0, 255);
+      }
+      83% {
+        background-color: rgb(192, 0, 255);
+      }
+      91% {
+        background-color: rgb(160, 0, 255);
+      }
+    }
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    animation: moveDiv 5s linear infinite;
+    }
+
+@keyframes moveDiv {
+        0% {
+          transform: translateX(100vw);
+        }
+        50% {
+          transform: translateX(50vw);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+  
