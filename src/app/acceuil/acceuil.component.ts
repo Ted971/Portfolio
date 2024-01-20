@@ -7,6 +7,7 @@ import { max } from 'rxjs';
   styleUrls: ['./acceuil.component.css']
 })
 export class AcceuilComponent {
+  dkai:any = "assets/images/dkAI.png";
   msg = "Bienvenue";
   tab = ["Bienvenue", "Welcome", "Welkom", "Willkommen", "مرحباً", "欢迎", "환영", "स्वागत", "Benvenuto", "いらっしゃいませ", "Bem-vindo", "Bienvenido", "Ласкаво просимо", "∴ᒷꖎᓵ𝙹ᒲᒷ"];
   private changeTxt(){

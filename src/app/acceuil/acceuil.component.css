@@ -5,13 +5,14 @@
     margin-top: 20%;
     position: relative;
     animation: blueRainbowBg 15s linear;
-	animation-iteration-count: infinite;
+	  animation-iteration-count: infinite;
     width: 100%;
+    line-height: 14px;
 }
 
 
 .bienvenue{
-    font-size: 38px;
+    font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
     color: white;
 }
@@ -44,7 +45,7 @@
         background-color: rgb(224, 0, 255);
       }
       66% {
-        background-color: rgb(255, 0, 255); /* Purple */
+        background-color: rgb(255, 0, 255);
       }
       75% {
         background-color: rgb(224, 0, 255);
@@ -59,24 +60,41 @@
 
 
 .box {
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 200px;
     background-color: blue;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 0;
-    animation: moveDiv 5s linear infinite;
+    animation: moveDiv 8s linear infinite;
+    border-radius: 25px;
     }
+
+.box img{
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  border-color: blue;
+}
 
 @keyframes moveDiv {
         0% {
           transform: translateX(100vw);
         }
-        50% {
+        20%{
+          transform: translateX(75vw);
+        }
+        40% {
           transform: translateX(50vw);
         }
+        60%{
+          transform: translateX(25vw);
+        }
+        80%{
+          transform: translateX(0vw);
+        }
         100% {
-          transform: translateX(0);
+          transform: translateX(-25vw);
         }
       }
   
